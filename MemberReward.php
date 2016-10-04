@@ -1,4 +1,3 @@
-
 application/view/
 application/view/MemberReward.php
 
