@@ -1,4 +1,3 @@
-<!DOCKTYPE html>
 <html>
 <head>
 	<title><h1> Form Keaktifan Member</h1></title>
@@ -7,6 +6,7 @@
 </head>
 
 <body>
+<form>
 <div class="container">
 	<label> Member ID:
 	</label> 
@@ -23,10 +23,9 @@
  		<option value="4">4. Peserta Seminar Nasional 100</option>  
  		</select>   
  		<input type="submit" name="enter" value="Enter">   
-
-</form>
-</label>
-<input type = "text" name="jenis_acara" id = "jenis_acara" placeholder = "Nama Bank Penransfer" required="" value="<?php if(isset($namabank)){echo $namabank;} ?>">
+	</form>
+	</label>
+	<input type = "text" name="jenis_acara" id = "jenis_acara" required="" value="1","2","3","4">
 </div>
 <div class="form">
 	<label> Upload Sertifikat:
@@ -41,3 +40,5 @@
 <button type = "submit" class = "btn btn-primary">Submit</button>
 
 </form>
+</body>
+</html>
