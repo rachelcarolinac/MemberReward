@@ -17,10 +17,10 @@
 	 <form action="" method="post">   
  		<select name="jenis_acara">  
  		<option value="">Silahkan Pilih</option>  
- 		<option value="1">1. Panita Seminar Internasional 300</option>  
- 		<option value="2">2. Panitia Seminar Nasional 200</option>  
- 		<option value="3">3. Peserta Seminar Internasional 150</option>  
- 		<option value="4">4. Peserta Seminar Nasional 100</option>  
+ 		<option value="1">1. Panita Seminar Internasional (point 300)</option>  
+ 		<option value="2">2. Panitia Seminar Nasional (point 200)</option>  
+ 		<option value="3">3. Peserta Seminar Internasional (point 150)</option>  
+ 		<option value="4">4. Peserta Seminar Nasional (point100)</option>  
  		</select>   
  		<input type="submit" name="enter" value="Enter">   
 	</form>
