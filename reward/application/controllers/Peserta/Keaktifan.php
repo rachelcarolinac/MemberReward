@@ -120,7 +120,21 @@ class Keaktifan extends CI_Controller {
 				$data['alert_bukti']='Berhasil memperbarui data';
 			}
 		};
+		$kirim=array(
+			'id_keaktifan'=>$id,
+			'id_pengguna'=>$this->id_pengguna
+			);
 
+		$data['rincian_keaktifan']=$this->Keaktifan->lihat($kirim);
+		$data['daftar_kegiatan']=$this->Kegiatan->lihat();
+
+		$this->load->view('templates/header');
+		$this->load->view('peserta/keaktifan/ubah',$data);
+		$this->load->view('templates/footer');
+	}
+
+	function hapus($id) {
+		$this->Keaktifan->hapus($id);
 
 	}
 
