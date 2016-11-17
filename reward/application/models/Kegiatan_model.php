@@ -23,16 +23,7 @@ class Kegiatan_model extends CI_Model {
         return $this->db->affected_rows();
     }
 
-    public function ubah($id,$data){
-    	$this->db->where('id_kegiatan',$id);
-    	$this->db->update('kegiatan',$data);
-        return $this->db->affected_rows();
-    }
 
-    public function hapus($id){
-    	$this->db->where('id_kegiatan',$id);
-    	$this->db->delete('kegiatan');
-        return $this->db->affected_rows();
     }
 
 }
