@@ -29,4 +29,3 @@ class Keaktifan extends CI_Controller {
 	}
 
 	
-}
