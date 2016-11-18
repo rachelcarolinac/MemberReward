@@ -24,7 +24,12 @@ class Keaktifan_model extends CI_Model {
 		return $this->db->affected_rows();
 	}
 
-	
+	public function ubah($id,$data){
+		$this->db->where('id_keaktifan',$id);
+		$this->db->update('keaktifan',$data);
+		return $this->db->affected_rows();
+	}
+
 	public function hapus($id){
 		$this->db->where('id_keaktifan',$id);
 		$this->db->delete('keaktifan');
