@@ -28,4 +28,35 @@ class Keaktifan extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
-	
+	function rincian($id) {
+
+		$data['alert']=null;
+
+		if(isset($_POST['setuju'])){
+			$kirim=array(
+				'status_keaktifan'=>'1'
+				);
+			$this->Keaktifan->ubah($id,$kirim);
+			$data['alert']='Berhasil memperbarui data';
+		}
+
+		if(isset($_POST['tolak'])){
+			$kirim=array(
+				'status_keaktifan'=>'2'
+				);
+			$this->Keaktifan->ubah($id,$kirim);
+			$data['alert']='Berhasil memperbarui data';
+		}
+
+		$kirim=array(
+			'id_keaktifan'=>$id,
+			);
+
+		$data['rincian_keaktifan']=$this->Keaktifan->lihat($kirim);
+		$data['daftar_kegiatan']=$this->Kegiatan->lihat();
+
+		$this->load->view('templates/header');
+		$this->load->view('admin/keaktifan/ubah',$data);
+		$this->load->view('templates/footer');
+	}
+}
