@@ -27,5 +27,16 @@ class Testing extends CI_Controller {
 		echo $this->unit->report();
 	}
 
-	
+	function hasil()
+	{
+		$obj = new stdClass;
+		$obj->id_pengguna = "2";
+		$obj->nama_pengguna = "Pengguna";
+		$obj->level_pengguna ="2";
+		$obj->username = "pengguna";
+		$obj->password ="pengguna";
+		$array[0] = $obj;
+		return $array;
+	}
+}
 
