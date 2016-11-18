@@ -21,7 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="row">
 						<div class="col-lg-12">
 						<?php if($alert!=null){echo $alert;} ?>
-							<form action="" method="POST" accept-charset="utf-8" enctype="multipart/form-data">
+						<form action="" method="POST" accept-charset="utf-8" enctype="multipart/form-data">
 								<div class="form-group">
 									<label>Pilih Kegiatan :</label>
 									<select class="form-control" name="kegiatan" required="">
@@ -42,7 +42,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<input type="file" name="bukti" accept="image/*" required />
 								</div>
 								<button class="btn btn-info" name="submit">Submit</button>
-							</form>
+							</form>	
 						</div>
 					</div>
 				</div>

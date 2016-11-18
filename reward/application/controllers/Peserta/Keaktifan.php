@@ -120,7 +120,6 @@ class Keaktifan extends CI_Controller {
 				$data['alert_bukti']='Berhasil memperbarui data';
 			}
 		};
-
 		$kirim=array(
 			'id_keaktifan'=>$id,
 			'id_pengguna'=>$this->id_pengguna
@@ -136,6 +135,7 @@ class Keaktifan extends CI_Controller {
 
 	function hapus($id) {
 		$this->Keaktifan->hapus($id);
+
 	}
 
 }

@@ -23,7 +23,6 @@ class Keaktifan_model extends CI_Model {
 		$this->db->insert('keaktifan',$data);
 		return $this->db->affected_rows();
 	}
-
 	public function ubah($id,$data){
 		$this->db->where('id_keaktifan',$id);
 		$this->db->update('keaktifan',$data);
@@ -34,6 +33,7 @@ class Keaktifan_model extends CI_Model {
 		$this->db->where('id_keaktifan',$id);
 		$this->db->delete('keaktifan');
 		return $this->db->affected_rows();
+
 	}
 
 }

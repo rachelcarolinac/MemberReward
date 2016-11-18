@@ -35,13 +35,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</thead>
 								<?php foreach($daftar_keaktifan as $dk): ?>
 									<tbody>
-										<tr class="odd gradeX">
+									<tr class="odd gradeX">
 											<td><a href="<?php echo site_url('Peserta/Keaktifan/Rincian/'.$dk->id_keaktifan); ?>"><?php echo $dk->nama_kegiatan; ?></a></td>
 											<td><?php echo $dk->deskripsi; ?></td>
 											<td><?php echo $dk->poin_kegiatan; ?></td>
 											<td><a href="<?php echo base_url('uploads/'.$dk->nama_file); ?>">Lihat</a></td>
 											<td><?php echo ($dk->status_keaktifan==0?'Belum Disetujui':($dk->status_keaktifan==2?'Ditolak':'Disetujui')); ?></td>
 										</tr>
+
 									</tbody>
 								<?php endforeach; ?>
 							</table>
